@@ -22,7 +22,35 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Kihon::Client.greeting
+#=> {
+#     :title => "10月31日の\nおやすみなさい",
+#     :content =>
+#       "肌にやさしいクリームやオイルを使って、顔のマッサージをしてみましょう。
+#        顔の筋肉がこわばっているかもしれません。顔をやわらくしてあげると、笑
+#        顔も自然とやわらかくなります。今日もおつかれさまでした。ゆっくりお休
+#        みください。",
+#     :editor => "松浦 弥太郎"
+#   }
+
+
+Kihon::Client.formatted_greeting
+#=>　　　10月31日の
+# 　　　　おやすみなさい
+#
+# 肌にやさしいクリームやオイ
+# ルを使って、顔のマッサージ
+# をしてみましょう。顔の筋肉
+# がこわばっているかもしれま
+# せん。顔をやわらくしてあげ
+# ると、笑顔も自然とやわらか
+# くなります。今日もおつかれ
+# さまでした。ゆっくりお休み
+# ださい
+#
+#       松浦 弥太郎
+```
 
 ## Development
 
@@ -38,4 +66,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
